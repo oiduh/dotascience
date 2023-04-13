@@ -673,6 +673,16 @@ PROBLEM #2 - player feature is huge
         - damage_inflictor:
         - damage_inflictor_received:
         - damage_taken:
+            * dict with source and amount of damage
+            * damage sources (unprocessed):
+                + enemy heroes
+                + badguys/goodguys -> creeps and towers
+                + neutral: neutral creeps
+                + roshan
+                + fountain
+            * damage sources (processed):
+                + sum hero damage -> inconsistent with opendota -> summons!
+                
         - damage_targets:
         - deaths:
             * simple
@@ -735,6 +745,7 @@ PROBLEM #2 - player feature is huge
             * simple
         - pings:
             * pings
+            * ERROR: if player didnt ping -> no entry -> key error
         - purchase_log:
         - roshan_kills:
             * simple
