@@ -682,7 +682,13 @@ PROBLEM #2 - player feature is huge
                 + fountain
             * damage sources (processed):
                 + sum hero damage -> inconsistent with opendota -> summons!
-                
+                + sum creep damage
+                + sum tower damage
+                + sum neutral damage
+                + sum roshan damage
+                + sum fountain damage
+            * compare with match ids and push
+            * ...
         - damage_targets:
         - deaths:
             * simple
